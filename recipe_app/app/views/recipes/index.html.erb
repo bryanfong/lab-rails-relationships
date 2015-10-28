@@ -1,1 +1,21 @@
-<h1>This is index page</h1>
+<h1>Recipes - index page</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Course Name</th>
+      <th>Instruction</th>
+      <th>Servings</th>
+    </tr>
+    <% @recipes.each do |element| %>
+      <tr>
+        <td><%= element.name %></td>
+        <td><%= element.instructions%></td>
+        <td><%= element.servings %></td>
+        <td><a href="/recipes/edit">Edit</a></td>
+        <td><a href="#">Delete</a></td>
+      </tr>
+    <% end %>
+    <tr><td><button><a href="/recipes/new">Create New Recipe</a></button></td></tr>
+  </tbody>
+</table>

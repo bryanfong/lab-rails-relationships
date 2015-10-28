@@ -1,11 +1,13 @@
-<h1>This is index page</h1>
+<h1>Courses - index page</h1>
 
-<table id="tweets">
-
+<table>
   <tbody>
+    <tr>
+      <th>Courses</th>
+    </tr>
     <% @courses.each do |element| %>
       <tr>
-        <td><%= element.content %></td>
+        <td><%= element.name %></td>
       </tr>
     <% end %>
   </tbody>
