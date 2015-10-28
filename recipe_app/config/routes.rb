@@ -12,7 +12,6 @@ post 'recipes', to: 'recipes#create'
 #show - recipes
 get '/recipes/:id', to: 'recipes#show'
 
-
 #edit - recipes
 # get '/recipes/:id/edit' to: 'recipes#edit'
 

@@ -12,17 +12,19 @@ end
 
 #create
 def create
-  @recipe = Recipe.create!(params[:recipe])
+  @recipe = Recipe.new(params[:recipe])
+end
+
+#show
+def show
+  @recipe = Recipe.find(params[:id])
 end
 
 #edit
 def edit
 end
 
-#show
-def show
-  # @recipe = Recipe.find(params[:id])
-end
+
 
 
 
