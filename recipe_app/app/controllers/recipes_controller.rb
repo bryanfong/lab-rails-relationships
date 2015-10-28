@@ -11,8 +11,8 @@ def new
 end
 
 #edit
-# def edit
-# end
+def edit
+end
 
 #show
 def show

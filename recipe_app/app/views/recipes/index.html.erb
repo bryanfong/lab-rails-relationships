@@ -1,3 +1,4 @@
+
 <h1>Recipes - index page</h1>
 
 <table>
@@ -9,10 +10,10 @@
     </tr>
     <% @recipes.each do |element| %>
       <tr>
-        <td><%= element.name %></td>
+        <td><a href="/recipes/<%= element.id%>"><%= element.name %></a></td>
         <td><%= element.instructions%></td>
         <td><%= element.servings %></td>
-        <td><a href="/recipes/edit">Edit</a></td>
+        <td><a href="/recipes/<%= element.id%>/edit">Edit</a></td>
         <td><a href="#">Delete</a></td>
       </tr>
     <% end %>

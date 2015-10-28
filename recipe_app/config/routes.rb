@@ -6,18 +6,24 @@ get '/recipes', to: 'recipes#index'
 #new - recipes
 get '/recipes/new', to: 'recipes#new'
 
-#edit - recipes
-# get '/recipes/:id/edit' to: 'recipes#edit'
-
 #show - recipes
 get '/recipes/:id', to: 'recipes#show'
 #create - recipes
+
+#edit - recipes
+# get '/recipes/:id/edit' to: 'recipes#edit'
+
+
 
 
 
 #update - recipes
 
 #destroy - recipes
+
+
+
+
 
 #index - courses
 get '/courses', to: 'courses#index'
