@@ -6,9 +6,12 @@ get '/recipes', to: 'recipes#index'
 #new - recipes
 get '/recipes/new', to: 'recipes#new'
 
+#create - recipes
+post 'recipes', to: 'recipes#create'
+
 #show - recipes
 get '/recipes/:id', to: 'recipes#show'
-#create - recipes
+
 
 #edit - recipes
 # get '/recipes/:id/edit' to: 'recipes#edit'

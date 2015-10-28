@@ -7,7 +7,12 @@ end
 
 #new
 def new
-  # @recipe = Recipe.new
+  @recipe = Recipe.new
+end
+
+#create
+def create
+  @recipe = Recipe.create!(params[:recipe])
 end
 
 #edit
@@ -20,7 +25,7 @@ def show
 end
 
 
-#create
+
 
 #update
 
