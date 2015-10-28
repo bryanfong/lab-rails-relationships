@@ -1,19 +1,35 @@
 Rails.application.routes.draw do
 
-#index
-  get "/recipes", to: "recipe"
+#index - recipes
+get '/recipes', to: 'recipes#index'
 
-#show
+#new - recipes
+get '/recipes/new', to: 'recipes#new'
 
-#new
+#show - recipes
+get '/recipes/:id', to: 'recipes#show'
+#create - recipes
 
-#create
+#edit - recipes
 
-#edit
+#update - recipes
 
-#update
+#destroy - recipes
 
-#destroy
+#index - courses
+get '/courses', to: 'courses#index'
 
+#new - courses
+get '/courses/new', to: 'courses#new'
 
+#show - courses
+get '/courses/:id', to: 'courses#show'
+
+#create - courses
+
+#edit - courses
+
+#update - courses
+
+#destroy - courses
 end

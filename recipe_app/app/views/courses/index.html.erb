@@ -1,0 +1,12 @@
+<h1>This is index page</h1>
+
+<table id="tweets">
+
+  <tbody>
+    <% @courses.each do |element| %>
+      <tr>
+        <td><%= element.content %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
