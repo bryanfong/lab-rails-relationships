@@ -1,3 +1,3 @@
 class Course < ActiveRecord::Base
-  belongs_to :recipe
+  has_many :recipes
 end

@@ -10,10 +10,10 @@ get '/recipes/new', to: 'recipes#new'
 post 'recipes', to: 'recipes#create'
 
 #show - recipes
-get '/recipes/:id', to: 'recipes#show'
+get '/recipes/:id', to: 'recipes#show', as: "recipe"
 
 #edit - recipes
-# get '/recipes/:id/edit' to: 'recipes#show'
+get '/recipes/:id/edit', to: 'recipes#edit'
 
 
 #update - recipes

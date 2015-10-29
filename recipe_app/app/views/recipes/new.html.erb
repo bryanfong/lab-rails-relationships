@@ -1,6 +1,6 @@
 <h1>This is page for "new"</h1>
 
-<form action="/recipes" method="post">
+<!-- <form action="/recipes" method="post">
   <label>Course Name</label>
   <input>
   <label>Instruction</label>
@@ -8,5 +8,23 @@
   <label>Serving</label>
   <input>
   <input type="submit" value="Create">
-</form>
+</form> -->
 
+<%= form_for @recipe do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :instructions %>
+    <%= f.text_area :instructions %>
+  </div>
+  <div class="field">
+    <%= f.label :servings %>
+    <%= f.number_field :servings %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit%>
+  </div>
+<% end %>
