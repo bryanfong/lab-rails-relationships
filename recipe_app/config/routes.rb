@@ -13,7 +13,7 @@ post 'recipes', to: 'recipes#create'
 get '/recipes/:id', to: 'recipes#show'
 
 #edit - recipes
-# get '/recipes/:id/edit' to: 'recipes#edit'
+# get '/recipes/:id/edit' to: 'recipes#show'
 
 
 
