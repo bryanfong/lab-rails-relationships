@@ -17,6 +17,8 @@ get '/recipes/:id', to: 'recipes#show'
 
 
 #update - recipes
+put '/recipes/:id', to: 'recipes#update'
+
 
 #destroy - recipes
 post 'recipes/:id/delete', to: 'recipes#destroy'
