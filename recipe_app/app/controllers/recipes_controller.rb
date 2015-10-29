@@ -22,15 +22,14 @@ end
 
 #edit
 def edit
+  # @recipe = Recipe.find(params[:id])
 end
 
-
-
-
-
+#destroy
+def destroy
+  @recipe = Recipe.find(params[:id])
+end
 
 #update
-
-#destroy
 
 end

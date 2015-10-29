@@ -10,11 +10,23 @@
     </tr>
     <% @recipes.each do |element| %>
       <tr>
-        <td><a href="/recipes/<%= element.id%>"><%= element.name %></a></td>
-        <td><%= element.instructions%></td>
-        <td><%= element.servings %></td>
-        <td><a href="/recipes/<%= element.id%>/edit">Edit</a></td>
-        <td><a href="#">Delete</a></td>
+        <td>
+        <a href="/recipes/<%= element.id%>"><%= element.name %></a>
+        </td>
+        <td>
+          <%= element.instructions%>
+        </td>
+        <td>
+          <%= element.servings %>
+        </td>
+        <td>
+          <a href="/recipes/<%= element.id%>/edit">Edit</a>
+        </td>
+        <td>
+          <form method="post" action="/recipes/<%= element.id%>/delete">
+            <button>Delete</button>
+          </form>
+          </td>
       </tr>
     <% end %>
     <tr><td><button><a href="/recipes/new">Create New Recipe</a></button></td></tr>

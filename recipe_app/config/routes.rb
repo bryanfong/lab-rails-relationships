@@ -16,13 +16,10 @@ get '/recipes/:id', to: 'recipes#show'
 # get '/recipes/:id/edit' to: 'recipes#show'
 
 
-
-
-
 #update - recipes
 
 #destroy - recipes
-
+post 'recipes/:id/delete', to: 'recipes#destroy'
 
 
 
