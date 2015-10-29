@@ -23,10 +23,10 @@
           <a href="/recipes/<%= element.id%>/edit">Edit</a>
         </td>
         <td>
-          <form method="post" action="/recipes/<%= element.id%>/delete">
-            <button>Delete</button>
-          </form>
-          </td>
+          <%= form_for element, method: "delete", url: recipe_path(element) do |f| %>
+            <%= f.submit "Delete" %>
+          <% end %>
+        </td>
       </tr>
     <% end %>
     <tr><td><button><a href="/recipes/new">Create New Recipe</a></button></td></tr>
